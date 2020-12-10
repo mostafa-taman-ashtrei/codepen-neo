@@ -5,6 +5,8 @@ import { Collapse, CssBaseline } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import IconButton from '@material-ui/core/IconButton';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -27,16 +29,17 @@ const useStyles = makeStyles((theme) => ({
         color: '#fff',
         margin: '100px'
     },
-    goDown: {
-        color: '#11d993',
-        fontSize: '4rem'
-    },
     btn:{
         color: '#11d993',
         background: '#000'
     },
     link: {
         textDecoration: 'none'
+    },
+    github: {
+        textDecoration: 'none',
+        margin: 'auto',
+        color: '#11d993'
     },
     p: {
         color: '#11d993',
@@ -65,7 +68,16 @@ export default function Home() {
                     </h1>
 
                     <Typography variant="h5" align="center" color="textSecondary" paragraph className={classes.p} >
-                        This is a codepen clone called neocodepen developed by [github] you can use it to practice your html, css, javascript and even markdown
+                        This is a codepen clone called neocodepen developed by  
+                        <a  href="https://github.com/neoScriptscode" target="_blank" rel="noopener noreferrer">
+                        <IconButton
+                            edge="start"
+                            className={classes.github}
+                        >
+                            <GitHubIcon />                   
+                        </IconButton>
+                        </a>
+                         you can use it to practice your html, css, javascript and even markdown
                     </Typography>
 
                     <Grid container spacing={3} justify="center">
