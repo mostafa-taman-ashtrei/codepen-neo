@@ -7,7 +7,7 @@ body {
 }
 
 .pane {
-  height: 50vh;
+  height: 80vh;
   display: flex;
 }
 
@@ -23,7 +23,7 @@ body {
   max-width: 100%;
 }
 
-/* @media screen and  (orientation: portrait) {
+@media screen and  (orientation: portrait) {
   .editor-container{
     max-width: 100%;
     margin: 1px;
@@ -37,8 +37,9 @@ body {
       width: 300px;
       max-width: 290px;
       margin: 3px;
+      height: 100%;
     }
-} */
+}
 
 .editor-container.collapsed {
   flex-grow: 1;
