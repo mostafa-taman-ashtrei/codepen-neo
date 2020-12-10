@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+}
+
+.top-pane {
+  background-color: hsl(225, 6%, 25%);
+}
+
+.pane {
+  height: 50vh;
+  display: flex;
+}
+
+.editor-container {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  background-color: hsl(225, 6%, 25%);
+  font-size: 1.5rem;
+  margin: 10px;
+  max-width: 100%;
+}
+
+/* @media screen and  (orientation: portrait) {
+  .editor-container{
+    max-width: 100%;
+    margin: 1px;
+  }
+}
+
+
+@media only screen and (min-device-width: 380px) and (max-device-width: 900px) and (orientation: landscape)
+ {
+    .editor-container{
+      width: 300px;
+      max-width: 290px;
+      margin: 3px;
+    }
+} */
+
+.editor-container.collapsed {
+  flex-grow: 1;
+}
+
+.editor-container.collapsed .CodeMirror-scroll {
+  position: absolute;
+  overflow: hidden !important;
+}
+
+.expand-collapse-btn {
+  margin-left: .5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.editor-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(225, 6%, 13%);
+  color: white;
+  padding: .5rem .5rem .5rem 1rem;
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+
+.CodeMirror {
+  height: 100% !important;
+}
+
+.code-mirror-wrapper {
+  flex-grow: 1;
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  overflow: hidden;
+}
+
+.container {
+ display: flex;
+}
+
+.textarea {
+  width: 50%;
+  height: 100vh;
+  padding: 20px;
+  font-size: 2rem;
+  outline: none;
+  background-color: hsl(225, 6%, 13%);
+  color: aliceblue;
+  resize: none;
+}
+
+.Markdown {
+  width: 50%;
+  height: 100vh;
+  padding: 20px;
+  outline: none;
+  background-color: hsl(225, 6%, 13%);
+  color: aliceblue;
+  overflow: auto;
+}
+
